@@ -11,9 +11,9 @@ import java.util.Scanner;
 
 public class BinaryService {
 	
-		public  void openBinaryFile()
+		public static  void openBinaryFile()
 	    {
-	        Path path = Paths.get("doc.txt");
+	        Path path = Paths.get("data");
 	        byte[] bytes = "11/04/2021,14,25.5;12/05/2020,10,22.3;".getBytes(StandardCharsets.UTF_8);
 	        
 	        try {
@@ -35,6 +35,10 @@ public class BinaryService {
 	            System.out.println("An error occurred.");
 	            e.printStackTrace();
 	          }
+	    }
+		
+		public static void main(String[] args) {
+			openBinaryFile();
 	    }
 	
 }
