@@ -1,4 +1,4 @@
-package AionDB.AionDB;
+package models;
 
 public class Storage {
 	// timeStamp returns the timestamp in nanoseconds. 64 bits integer

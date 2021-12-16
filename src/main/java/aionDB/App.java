@@ -1,5 +1,4 @@
-package aionDB.AionDB;
-import aionDB.AionDB.Storage;
+package aionDB;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,6 +12,8 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
 import com.opencsv.CSVWriter;
+
+import models.Storage;
 @SuppressWarnings("unused")
 public class App 
 {
