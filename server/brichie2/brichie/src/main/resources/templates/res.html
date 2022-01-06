@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="/stylesheet.css">
+    <title>results</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="res"> <h1>Result</h1> </div>
+        
+    <div class="db"> <p th:text="'DB: ' + ${data.db}" /> </div>
+    <div class="serie"> <p th:text="'SERIE: ' + ${data.serie}" /> </div>
+    <div class="content"> <p> CONTENT: </p> </div>
+    <div class="table">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                    <th:block th:each="item : ${data.keys}">
+                        <th>[[${item}]]</th>
+                    </th:block>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th:block th:each="item : ${data.values}">
+                            <td>[[${item}]]</td>
+                        </th:block>
+                    </tr>
+
+                </tbody>
+            </table>
+            </div> 
+            <div class="checkOtherDb"> <a href="/">Check other DB</a> </div>
+</body>
+</html>

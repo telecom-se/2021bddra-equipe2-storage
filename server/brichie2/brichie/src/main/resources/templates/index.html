@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="/stylesheet.css">
+    <title>DATABASE</title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <h1>Choose the DB and serie you want to check</h1>
+    <form action="#" th:action="@{/}" th:object="${data}" method="post">
+    	<p>DB: <input type="text" th:field="*{db}" /></p>
+        <p>Serie: <input type="text" th:field="*{serie}" /></p>
+        <p><input type="submit" value="Submit"/> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
