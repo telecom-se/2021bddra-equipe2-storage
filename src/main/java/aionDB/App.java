@@ -114,7 +114,7 @@ public class App
         	{
         		System.out.println("CREATING DATABASE " +user_command_split[2] );
         		createDatabase(user_command_split[2]);
-        		
+        		//gléglé
         	}
         	
         	else if (user_command_split[0].equals("CREATE") && user_command_split[1].equals("SERIE") && !user_command_split[2].equals(" "))
